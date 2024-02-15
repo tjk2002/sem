@@ -7,8 +7,16 @@ import org.bson.Document;
 
 public class App
 {
+    //Creating hello world function
+    public static void helloWorld() {
+        //Printing hello world
+        System.out.println("Hello World!");
+    }
     public static void main(String[] args)
     {
+        //Call the helloWorld function
+        helloWorld();
+
         // Connect to MongoDB
         MongoClient mongoClient = new MongoClient("mongo-dbserver");
         // Get a database - will create when we use it
